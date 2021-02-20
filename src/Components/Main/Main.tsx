@@ -8,7 +8,6 @@ const Main = () => {
     const [timerArray, setTimerArray] = useState<Array<number|string>>([]);
     
     useEffect(() => {
-
         let timeArray : Array<number|string> = calculateTimer(timeInSeconds);
         setTimerArray(timeArray);
     }, [timeInSeconds])
